@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<hr>
+		<a th:href="@{|student?index=${n-1}|}">prev</a>
+		<h3>~[[${n+1}]]/4~</h3>
+		<a th:href="@{|student?index=${n+1}|}">next</a>
+	<hr>
+	<ul>
+		<li>[[${sv.name}]]</li>
+		<li>[[${sv.gender?'Nam':'Nu'}]]</li>
+		<li>[[${sv.mark}]]</li>
+		<li>[[${sv.mark>5?'passed':'fail'}]]</li>
+	</ul>
+</body>
+</html>
+ 

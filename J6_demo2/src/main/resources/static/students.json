@@ -1,0 +1,52 @@
+[
+	{
+		"name": "1",
+		"gender": true,
+		"mark": 2.0,
+		"contact":{
+			"email": "hung1@gmail.com",
+			"phone": "0111111"
+		},
+		"subject":["WEB","COM"]
+	},
+	{
+		"name": "2",
+		"gender": false,
+		"mark": 5.0,
+		"contact":{
+			"email": "hung2@gmail.com",
+			"phone": "0111111"
+		},
+		"subject":["WEB"]
+	},
+	{
+		"name": "3",
+		"gender": false,
+		"mark": 7.0,
+		"contact":{
+			"email": "hung3@gmail.com",
+			"phone": "0111111"
+		},
+		"subject":["WEB","COM"]
+	},
+	{
+		"name": "4",
+		"gender": true,
+		"mark": 2.0,
+		"contact":{
+			"email": "hung4@gmail.com",
+			"phone": "0111111"
+		},
+		"subject":["WEB","COM"]
+	},
+		{
+		"name": "5",
+		"gender": false,
+		"mark": 9.5,
+		"contact":{
+			"email": "hung5@gmail.com",
+			"phone": "0111111"
+		},
+		"subject":["WEB","COM","GG"]
+	}
+]

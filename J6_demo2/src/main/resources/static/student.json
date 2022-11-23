@@ -1,0 +1,13 @@
+{
+	"name": "",
+	"gender": true,
+	"mark": 8.5,
+	"contact": {
+		"email": "hungnp@gmail.com",
+		"phone": "0111111"
+	},
+	"subject": [
+		"WEB",
+		"COM"
+	]
+}

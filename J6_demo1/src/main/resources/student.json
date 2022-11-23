@@ -1,0 +1,10 @@
+{
+			"name":"Nguyen Phi Hung",
+			"gender":true,
+			"marks" : 7.5,
+			"contact":{
+				"email":"hungnpph24034@fpt.edu.vn",
+				"phone":"0366436453"
+			},	
+			"subjec":["WEB205","COM108"]
+		}

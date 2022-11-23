@@ -1,0 +1,50 @@
+[{
+			"name":"Nguyen Phi Hung",
+			"gender":true,
+			"marks" : 7.5,
+			"contact":{
+				"email":"hungnpph24034@fpt.edu.vn",
+				"phone":"0366436453"
+			},	
+			"subjec":["WEB205","COM108"]
+		},{
+			"name":"Nguyen Kieu Trinh",
+			"gender":false,
+			"marks" : 9.5,
+			"contact":{
+				"email":"trinh@fpt.edu.vn",
+				"phone":"0944434343"
+			},	
+			"subjec":["WEB205","COM108"]
+		},{
+			"name":"Nguyen Thu Trang",
+			"gender":false,
+			"marks" : 4.5,
+			"contact":{
+				"email":"trang@fpt.edu.vn",
+				"phone":"454534334"
+			},	
+			"subjec":["WEB205","COM108"]
+		},{
+			"name":"Dang Lan Huong",
+			"gender":false,
+			"marks" : 9.5,
+			"contact":{
+				"email":"huong@fpt.edu.vn",
+				"phone":"4445245454"
+			},	
+			"subjec":["WEB205","COM108"]
+		},{
+			"name":"Nguyen Tuan Dung",
+			"gender":true,
+			"marks" : 5.5,
+			"contact":{
+				"email":"dung@fpt.edu.vn",
+				"phone":"0424242344"
+			},	
+			"subjec":["WEB205","COM108"]
+		}
+		
+		
+		
+		]

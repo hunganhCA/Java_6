@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Hung Anh",
+		"gender": true,
+		"mark": 7.5,
+		"email": "teonv@gmail.com"
+	},
+	{
+		"name": "Nguyen Hung",
+		"gender": false,
+		"mark": 2.0,
+		"email": "teonv@gmail.com"
+		
+	},
+	{
+		"name": "Hung Nguyen 1",
+		"gender": true,
+		"mark": 3,
+		"email": "teonv@gmail.com"
+	},
+	{
+		"name": "Hung Nguyen 2",
+		"gender": false,
+		"mark": 7.5,
+		"email": "teonv@gmail.com"
+	}
+]

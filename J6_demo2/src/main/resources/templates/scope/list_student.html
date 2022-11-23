@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul>
+		<li>
+			Today <i th:text="${#dates.format(now,'EEE, dd-MM-yyyy')}"></i>
+		</li>
+		<li>
+			So sv <i th:text="${#lists.size(dssv)}"></i>
+		</li>
+		<li th:each="sv,state:${dssv}"><a
+			th:href="@{|/student/list?index=${state.index}|}">[[${sv.name}]]</a>
+		</li>
+	</ul>
+	<h3>Sinh vien</h3>
+	<ul th:object="${sv}">
+		<li><i>Name</i><b th:text="*{#strings.capitalizeWords(name)}"></b></li>
+		<li><i>Mark</i><b th:text="*{#numbers.formatDecimal(mark,2,'COMMA',5,'POINT')}"></b></li>
+		<li><i>Gender</i><b th:text="*{gender}?'Nam':'Nu'"></b></li>
+		<li><i>Contact</i><b th:text="*{contact.email}"></b></li>
+		<li><i>Subject</i>
+			<ul>
+				<li th:each="sub: *{subject}">
+					<b th:text="${sub}"></b>
+				</li>
+			</ul>
+		</li>
+		<li th:switch="*{#arrays.length(subject)}">
+			<i>Time</i>
+			<b th:case="1">Moi vao</b>
+			<b th:case="2">Dang hoc</b>
+			<b th:case="*">sap ra truong</b>
+		</li>
+		<li th:if="*{mark}>9"><b>ong vang</b>
+		</li>
+	</ul>
+</body>
+</html>

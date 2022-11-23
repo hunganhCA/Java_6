@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<img th:src="@{/image/12.png}">
+	<nav th:replace="~{/layout/menu.html}"></nav>
+	<h1 th:text = "${message}"></h1>
+	<ul th:object="${sv}">
+		<li th:text="*{name}"></li>
+		<li th:text="*{mark}"></li>
+		<li th:text="*{contact.email}"></li>
+		<li th:text="*{subject[1]}"></li>
+	</ul>
+</body>
+</html>
+ 
