@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{/layout/index :: dynamic(~{::main})}"> 
+   
+    <body>
+    <main>
+  <section class="order-form my-4 mx-4">
+    <div class="container pt-4"  th:replace="~{/cart/view :: shopping_cart}"> </div>
+    <div class="container pt-4">
+
+      <div class="row">
+        <div class="col-12">
+          <h1>Order Purchasing</h1>
+          <hr class="mt-1">
+        </div>
+        <div class="col-12">
+
+          <div class="row mx-4">
+            <div class="col-12 mb-2">
+              <label class="order-form-label">Your Information</label>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div id="custom" class="order-form-input" >[[${#request.remoteUser}]]</div>
+            </div>
+            <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+                <div class="order-form-input" >{{order.createDate| date :'dd-MM-yyyy'}}</div>
+            </div>
+          </div>
+
+        
+
+          <div class="row mt-3 mx-4">
+            <div class="col-12">
+              <label class="order-form-label">Adress</label>
+            </div>
+            <div class="col-12">
+              <input class="order-form-input" ng-model="order.address" placeholder="Street Address">
+            </div>
+           
+          </div>
+
+
+          <div class="row mt-3">
+            <div class="col-12">
+              <button type="button" ng-click="order.purchase()" id="btnSubmit" class="btn btn-dark d-block mx-auto btn-submit">Submit</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </main>
+    </body>
+</html>
