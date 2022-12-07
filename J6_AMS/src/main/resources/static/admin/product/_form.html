@@ -1,0 +1,74 @@
+<div class="row justify-content-center">
+    <h1 class="col-md-12 my-2 font1 text-center">
+        <b>Product Management</b>				
+    </h1>
+    
+    </div>
+
+<form  method="post">
+   <div class="row">
+    <div class="col-sm-4">
+       <img ng-src="{{'/images/'+form.image}}" 
+       style="width:400px ;height: 450px;object-fit: cover;">
+    </div>
+    
+    <div class="col-sm-4"> 
+        <div class="mb-2" >
+        <input name="id" type="text"  hidden="true"> 
+            <label class="form-label">Name</label>
+         <input ng-model="form.name" name="name" type="text" class="form-control" >
+    </div>
+    <div class="mb-2" >
+        <label class="form-label">Image</label>
+     <input  name=""type="file" class="form-control" >
+</div>
+        <div class="mb-2" >
+            <label class="form-label">Create Date</label>
+         <input ng-model="form.createDate" name=""type="Date" class="form-control" >
+    </div>
+</div>
+    <div class="col-sm-4">
+        <div class="mb-2" >
+            <label class="form-label">Price</label>
+         <input ng-model="form.price" name=""type="text" class="form-control" >
+            
+    </div>
+    <div class="mb-2" >
+            <label class="form-label">Category</label>
+        <select ng-model="form.category.id" class="form-select" aria-label="Default select example">
+  			<option value="id">name</option>
+  
+		</select>
+    </div>
+    
+   
+    <div class="mb-2">
+        <label class="form-label">Avaliable</label> <br>
+         <input ng-model="form.available" ng-value="true"
+            style="margin-left: 3px;" type="radio" class="form-check-input"
+            name="anvaliable" />
+             <b style="margin-left: 20px;">True</b> 
+             <input ng-model="form.available" ng-value="false"
+            style="margin-left: 8px;" type="radio" class="form-check-input"
+             name="anvaliable" />
+            <b style="margin-left: 25px;">False</b>
+    </div>
+
+    </div>
+   </div>
+        
+       
+        
+       
+        
+        
+        <div class="mb-2" style="margin-left: 460px;">
+            <button  formaction="/fa22b1_ph24034_AMS-1/product/add" class="btn btn-primary">Add</button>
+            
+            <button  formaction="/fa22b1_ph24034_AMS-1/product/update" class="btn btn-warning">Update</button>
+            
+            <a  href="/fa22b1_ph24034_AMS-1/product/reset" class="btn btn-success">Reset</a>
+
+            <button   class="btn btn-danger">Remove</button>
+        </div>
+</form>

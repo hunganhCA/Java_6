@@ -1,0 +1,21 @@
+<ul class="nav nav-tabs" style="font-variant: small-caps;">
+  <li><a data-bs-toggle="collapse" href="" data-bs-target="#multiCollapseExample1"  >Product edition</a> </li>
+  <li style="margin-left: 10px;"><a  data-bs-toggle="collapse" href="" data-bs-target="#multiCollapseExample2" >List of products</a></li>
+</ul>
+
+  <div class="row " >
+    <div class="collapse multi-collapse " id="multiCollapseExample1">
+      <div class="card card-body ">
+        <div ng-include="'/admin/product/_form.html'"></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="collapse multi-collapse active" id="multiCollapseExample2">
+      <div class="card card-body">
+        <div ng-include="'/admin/product/_table.html'"></div>
+      </div>
+    </div>
+  </div>

@@ -1,5 +1,7 @@
 package com.example.demo.rest.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +22,11 @@ public class ProductRestController {
 	@GetMapping("{id}")
 	public Product GetOne(@PathVariable("id") Integer id) {
 		return proSer.fillById(id);
+	}
+	
+	@GetMapping()
+	public List<Product> GetAll() {
+		return proSer.fillAll();
 	}
 	
 }

@@ -3,7 +3,9 @@ const app = angular.module("myApp", []);
 	app.controller("myCtrl", function($scope,$http) {
  $scope.cart={
     items:[],
+
 add(id){
+
         var item = this.items.find(item => item.id == id);
         if(item){
             item.qty++;
@@ -59,13 +61,14 @@ $scope.order = {
             return {
                 product:{id: item.id},
                 price: item.price,
-                quantity: item.quantity
+                quantity: item.qty
             }
         });
     },
 
     purchase(){
       var order = angular.copy(this);
+		order.account.username = document.getElementById("custom").innerText;
       // thuc hien dat hang
       $http.post("/rest/orders",order).then(resp=>{
         alert('Order Success!')
